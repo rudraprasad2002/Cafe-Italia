@@ -1,0 +1,142 @@
+/* Navbar Base */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 1100px;
+  padding: 20px 40px;
+  background: transparent;
+  z-index: 999;
+  transition: 0.3s ease;
+  margin-top: 30px;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  color: #d9b26f;
+}
+.navbar-logo span {
+  font-style: italic;
+}
+
+/* Menu */
+.navbar-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.navbar-menu li a:hover {
+  color: #d9b26f;
+}
+
+/* Book Table Button */
+.book-btn {
+  background: #d9b26f;
+  color: #111;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.book-btn:hover {
+  background: #c19a52;
+}
+
+/* Toggle Button (Hidden by Default) */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  background: white;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.navbar-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navbar-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    transition: right 0.4s ease;
+  }
+
+  .navbar-menu.active {
+    right: 0;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .book-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-logo a {
+    font-size: 20px;
+  }
+
+  .navbar-menu li a {
+    font-size: 18px;
+  }
+}

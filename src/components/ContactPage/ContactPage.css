@@ -1,0 +1,80 @@
+.contact-section {
+  background-color: #000;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-repeat: repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 5%;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.contact-overlay {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-label {
+  color: #cfcfcf;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #f6f6f6;
+  margin-bottom: 3rem;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background-color: rgba(20, 20, 20, 0.9);
+  padding: 2rem;
+  border-radius: 6px;
+  width: 230px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.card-label {
+  color: #d1d1d1;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.6rem;
+}
+
+.card-value {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #f6c544;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-card {
+    width: 90%;
+  }
+}

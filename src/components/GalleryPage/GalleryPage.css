@@ -1,0 +1,87 @@
+.gallery-section {
+  background-color: #000;
+  color: #fff;
+  padding: 5rem 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.gallery-label {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #aaa;
+  margin-bottom: 0.3rem;
+}
+
+.gallery-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.instagram-btn {
+  background: none;
+  color: #fff;
+  border: 1px solid #f6c544;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.instagram-btn:hover {
+  background-color: #f6c544;
+  color: #000;
+}
+
+.insta-icon {
+  font-size: 1.2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+  }
+
+  .instagram-btn {
+    font-size: 0.9rem;
+  }
+}

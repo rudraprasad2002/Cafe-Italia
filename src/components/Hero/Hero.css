@@ -1,0 +1,189 @@
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("/banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Centered content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  padding: 0 20px;
+}
+
+.hero-subtitle {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 800;
+  margin: 10px 0 30px;
+  line-height: 1.1;
+}
+
+.hero-btn {
+  background: #d9b26f;
+  color: #111;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #c39c54;
+}
+
+/* Floating circular “View Menu” button */
+.floating-menu-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 90px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d9b26f;
+  background: #111;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  z-index: 3;
+}
+
+.floating-menu-btn:hover {
+  background: #d9b26f;
+  color: #111;
+}
+
+.floating-menu-btn i {
+  font-size: 18px;
+}
+
+/* ===================================================
+   RESPONSIVE DESIGN
+=================================================== */
+
+/* Tablets (992px and below) */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 56px;
+  }
+
+  .hero-subtitle {
+    font-size: 26px;
+  }
+
+  .hero-btn {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+
+  .floating-menu-btn {
+    width: 70px;
+    height: 70px;
+    right: 30px;
+    bottom: 70px;
+  }
+
+  .floating-menu-btn i {
+    font-size: 16px;
+  }
+}
+
+/* Small Tablets / Large Phones (768px and below) */
+@media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+    background-position: center;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+  }
+
+  .hero-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .floating-menu-btn {
+    width: 65px;
+    height: 65px;
+    right: 25px;
+    bottom: 60px;
+    font-size: 11px;
+  }
+
+  .floating-menu-btn span {
+    display: none; /* Hide text, keep icon only */
+  }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+  .hero {
+    height: 85vh;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-btn {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  .floating-menu-btn {
+    width: 55px;
+    height: 55px;
+    right: 20px;
+    bottom: 40px;
+    font-size: 10px;
+  }
+
+  .floating-menu-btn i {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-menu-btn {
+    display: none;
+  }
+}
+
