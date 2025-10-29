@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Menu from "./components/Menu/Menu";
 import Hero from "./components/Hero/Hero";
 import Home from "./pages/Home";
-import MenuContainer from "./pages/MenuContainer";
 import About from "./components/About/About";
 import Specials from "./components/Specials/Specials";
 import MonthlyHighlights from "./components/MonthlyHighlight/MonthlyHighlight";
