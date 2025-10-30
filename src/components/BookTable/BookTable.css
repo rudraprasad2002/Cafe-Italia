@@ -1,0 +1,102 @@
+.bookTable-container{
+  width: 1200px;
+}
+
+
+.bookTable {
+  min-height: 100vh;
+  background: url('/bookTable.jpg')
+    no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  margin-top: 10px;
+}
+
+.bookTable form {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  max-width: 500px;
+  width: 100%;
+  color: #fff;
+}
+
+.bookTable h2 {
+  text-align: center;
+  color: #f5c16c;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.bookTable .mb-3,
+.bookTable .mb-4 {
+  margin-bottom: 20px;
+}
+
+.bookTable .MuiInputLabel-root {
+  color: #f5c16c !important;
+}
+
+.bookTable .MuiInputBase-input {
+  color: #fff !important;
+}
+
+.bookTable .MuiInput-underline:before {
+  border-bottom: 1px solid #f5c16c !important;
+}
+
+.bookTable .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid #ffc107 !important;
+}
+
+.bookTable .date-time-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  color: #f5c16c;
+  margin-top: 20px;
+}
+
+.bookTable .date-time-row .MuiFormControl-root {
+  flex: 1;
+}
+
+.bookTable button {
+  background-color: #f5c16c !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  border-radius: 8px !important;
+  padding: 12px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.bookTable button:hover {
+  background-color: #e0ac4d !important;
+  transform: scale(1.03);
+}
+
+
+
+/* Fix date and time text color inside MUI inputs */
+input[type="date"],
+input[type="time"] {
+  color: #f5c16c; /* golden yellow like other labels */
+}
+
+/* Change calendar and clock icon colors */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(80%) sepia(50%) saturate(300%) hue-rotate(10deg);
+  cursor: pointer;
+}
+
+/* For placeholder-like text (when empty) */
+input[type="date"]:not(:focus):invalid,
+input[type="time"]:not(:focus):invalid {
+  color: rgba(245, 193, 108, 0.7);
+}

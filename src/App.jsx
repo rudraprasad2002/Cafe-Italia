@@ -12,6 +12,7 @@ import ReviewsPage from "./components/ReviewPage/ReviewPage";
 import GalleryPage from "./components/GalleryPage/GalleryPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import FooterPage from "./components/FooterPage/FooterPage";
+import BookTable from "./components/BookTable/BookTable";
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<FooterPage />} />
         <Route path="/contact" element={<ContactPage />} />
-       
+        <Route path="/book" element={<BookTable />} />
+        
       </Routes>
     </Router>
   );

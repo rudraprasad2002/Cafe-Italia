@@ -47,7 +47,7 @@ const Navbar = () => {
 
         {/* Right - Book Table Button */}
         <div className="d-none d-lg-block">
-          <Link to="/book" className="btn book-btn fw-semibold rounded-pill px-3">
+          <Link to="/book" className="btn book-btn fw-semibold  px-3">
             BOOK TABLE →
           </Link>
         </div>
